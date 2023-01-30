@@ -1,3 +1,5 @@
+Project code source: 100 Days of Code: The Complete Python Pro Bootcamp course, on Udemy
+
 This is a Python script for the Hangman game, played in the terminal. The following files are present: 
     hangman_art.py >> used for the art in the game
     hangman_words.py >> used for storing the list of words from where a random one will be chosen by the script 
