@@ -27,41 +27,4 @@ kilometer_results_label.grid(column=1, row=1)
 kilometer_label.grid(column=2, row=1)
 calculate_button.grid(column=1, row=2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 window.mainloop()
