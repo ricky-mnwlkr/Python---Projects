@@ -1,0 +1,24 @@
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+direction = input("Do you want to (e)ncrypt or (d)ecrypt?\n")
+shift = int(input("Please enter the key to use (1 to 25):\n"))
+if direction == 'e':   
+    text = input("Enter the message to encrypt:\n").lower()
+elif direction == 'd':
+    text = input("Enter the message to decrypt:\n").lower()
+
+
+def caesar(start_text, shift_amount, cipher_direction):
+    end_text = ''
+    if cipher_direction == 'd':
+            shift_amount *= -1
+    for letter in start_text:
+        position = alphabet.index(letter)
+        new_position = position + shift_amount
+        end_text += alphabet[new_position]
+    print(end_text.upper())
+
+caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
+    
+
+        
